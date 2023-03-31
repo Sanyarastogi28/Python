@@ -1,4 +1,4 @@
-User will enter a floating point number let say 238.915. Your task is to find out the integer portion before the point (in this case 238) and then check if that integer portion is an even number or not?
+
 x=float(input("enter the number: "))
 if x>0:
     y=round(x)
