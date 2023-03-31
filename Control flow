@@ -1,0 +1,23 @@
+User will enter a floating point number let say 238.915. Your task is to find out the integer portion before the point (in this case 238) and then check if that integer portion is an even number or not?
+x=float(input("enter the number: "))
+if x>0:
+    y=round(x)
+    #print(y)
+    if y>x:                                                                                                                   
+        intPart=y-1
+        #print(intPart)
+    else:
+        intPart=y
+       # print(y)
+else:
+    y=round(x)
+    if x>y:
+        intPart=y+1
+        #print(intPart)
+    else:
+        intPart=y
+print(intPart)       # print(x)
+if intPart%2==0:
+    print("even")
+else:
+    print("odd")
