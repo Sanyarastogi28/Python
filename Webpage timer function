@@ -1,0 +1,38 @@
+'''
+#The movie theater has implemented online reservations through their website. From the seat selection page, customers have a limited amount of time to make their selection. You must write a function that counts down and reminds the user that they have limited time to make a selection. When time expires, it must print a timeout message.
+Instantiate a variable called mins and assign it a starting value of 10.
+Write a while loop that uses the sleep() function and decrements mins from 10 minutes. For each minute:
+Print how many minutes remain as an integer.
+BUT:
+If there are 5 minutes left, print Place your reservation soon! 5 minutes remaining. instead of the integer.
+If there are 2 minutes left, print Don't lose your seats! 2 minutes remaining. instead of the integer.
+When zero minutes remain, print User timed out. instead of the integer.
+Expected output:
+
+10
+9
+8
+7
+6
+Place your reservation soon! 5 minutes remaining.
+4
+3
+Don't lose your seats! 2 minutes remaining.
+1
+User timed out.
+'''
+
+from time import sleep
+
+n=10
+while n>=0:
+    if n==5:
+        print("Place your reservation soon! 5 minutes remaining.")
+    elif n==2:
+        print("Don't lose your seats! 2 minutes remaining.")
+    elif n==0:
+        print("User timed out.")
+    else:
+        print(n)
+    n=n-1
+    sleep(1)
