@@ -1,5 +1,5 @@
 '''
-#The movie theater has implemented online reservations through their website. From the seat selection page, customers have a limited amount of time to make their selection. You must write a function that counts down and reminds the user that they have limited time to make a selection. When time expires, it must print a timeout message.
+The movie theater has implemented online reservations through their website. From the seat selection page, customers have a limited amount of time to make their selection. You must write a function that counts down and reminds the user that they have limited time to make a selection. When time expires, it must print a timeout message.
 Instantiate a variable called mins and assign it a starting value of 10.
 Write a while loop that uses the sleep() function and decrements mins from 10 minutes. For each minute:
 Print how many minutes remain as an integer.
